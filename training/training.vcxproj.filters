@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tree.c">
+    <ClCompile Include="tree-traversal.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
