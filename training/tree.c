@@ -58,6 +58,7 @@ void preorder(treenode* root) {
     }
 }
 
+//중위 순회 함수
 void inorder(treenode* root) {
     if (root == NULL)
         return;
@@ -65,15 +66,16 @@ void inorder(treenode* root) {
     {
         while (root != NULL)
         {
-            push(root);
-            root = root->left;
+            push(root); //노드를 스택에 저장
+            root = root->left; //사용할 노드는 현재 노드의 왼쪽 노드로 지정
         }
-        root = pop();
-        printf("%d ", root->data);
-        root = root->right;
+        root = pop(); //스택에 있던 노드를 불러옴
+        printf("%d ", root->data); //노드 데이터 출력
+        root = root->right; //사용할 노드를 오른쪽 노드로 지정
     }
 }
 
+//후위 순회 함수
 void postorder(treenode* root) {
     if (root == NULL)
         return;
@@ -81,19 +83,21 @@ void postorder(treenode* root) {
     do {
         while (root != NULL)
         {
-            push(root);
-            root = root->left;
+            push(root); //현재 노드를 스택에 저장
+            root = root->left; //사용할 노드를 현재 노드의 왼쪽으로 지정
         }
         while (root == NULL && top >= 0)
         {
-            root = stack[top];
+            root = stack[top]; //현재 스택의 노드를 불러옴
+            //노드의 오른쪽이 NULL일 때
             if (root->right == NULL || root->right == prev) {
-                printf("%d ", root->data);
-                pop();
-                prev = root;
+                printf("%d ", root->data); //노드 데이터 출력
+                pop(); //스택의 노드를 빼내서 없앰
+                prev = root; 
                 root = NULL;
             }
             else {
+                //사용할 노드는 현재 노드의 오른쪽으로 지정
                 root = root->right;
             }
         }
