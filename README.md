@@ -1,2 +1,2 @@
 # Tree (Linked&array)
-<img src="./treel(linked&array).PNG" />
+<img src="./tree(linked&array).PNG" />
