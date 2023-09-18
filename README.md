@@ -1,2 +1,2 @@
-# Tree (Linked tree_traversal)
-<img src="./tree-traversal.PNG" />
+# Tree (Linked&array)
+<img src="./treel(linked&array).PNG" />
