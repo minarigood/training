@@ -18,5 +18,11 @@
     <ClCompile Include="tree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="tree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="expression tree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
