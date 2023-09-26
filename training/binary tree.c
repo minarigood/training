@@ -49,17 +49,18 @@ int main() {
 		scanf_s("%c", &choice);
 		if (choice == 's')
 			node_search();
-		else if (choice == 'i')
+		//else if (choice == 'i')
 
-		else if (choice == 'd')
+		//else if (choice == 'd')
 
-		else if (choice == 't')
+		//else if (choice == 't')
 
-		else if (choice == 'l')
+		//else if (choice == 'l')
 
-		else if (choice == 'D')
+		//else if (choice == 'D')
 
 		else if (choice == 'c')
+			break;
 	}
 
 	return 0;
