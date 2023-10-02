@@ -255,6 +255,7 @@ treenode* node_insert(treenode* root, char choice) {
 		root = insert(root, data, &node_count);
 	else if (choice == 'I')
 		root = insert_iterative(root, data, &node_count);
+
 	printf("방문한 노드 수 : %d\n", node_count);
 	inorder(root, &node_count); // 노드 삭제 후 중위 순회를 다시 수행하여 트리 상태를 출력
 	return root; // 수정된 루트 노드를 반환합니다.
@@ -331,6 +332,8 @@ int main() {
 			inorderwithcount(root);
 			printf("\n");
 		}
+		else if (choice == 'c')
+			break;
 	}
 
 	return 0;
