@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tree_expression.c">
+    <ClCompile Include="tree_traversal2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="tree_traversal2.c">
+    <ClCompile Include="binary_tree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
