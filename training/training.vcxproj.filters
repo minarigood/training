@@ -18,5 +18,8 @@
     <ClCompile Include="tree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="heap1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
