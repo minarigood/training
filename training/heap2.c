@@ -28,10 +28,12 @@ void heapify(int arr[], int n, int i) {
     }
 }
 
+//힙 정렬
 void heapSort(int arr[], int n) {
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, n, i);
 
+    //힙 정렬하는 부분 출력
     for (int i = 0; i < n; i++) {
         printf("Step %d: ", i + 1);
         for (int j = 0; j < n; j++) {
@@ -39,22 +41,21 @@ void heapSort(int arr[], int n) {
         }
         printf("\n");
 
+        //2개의 정수 변경
         swap(&arr[0], &arr[n - i - 1]);
         heapify(arr, n - i - 1, 0);
     }
 }
 
 int main() {
+    //정렬 할 리스트 선언
     int arr[] = { 34, 12, 76, 59, 32, 55, 88, 26, 16, 79, 34, 85, 29, 78, 41, 56, 86 };
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    printf("정렬 전 배열: \n");
-    for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
+    printf("힙 정렬\n");
+    heapSort(arr, n); //힙 정렬
+
     printf("\n");
-
-    heapSort(arr, n);
-
     printf("힙 정렬 후 배열: \n");
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
