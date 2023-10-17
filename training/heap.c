@@ -16,8 +16,6 @@ void insert_menu() {
 	int data;
 	printf("추가할 값 입력 : ");
 	scanf("%d", &data);
-
-
 }
 
 void menu() {
