@@ -169,14 +169,17 @@ int main() {
 
 		switch (choice)
 		{
+		//노드 추가
 		case 'i':
 			insert_menu(heap);
 			printf("\n");
 			break;
+		//노드 삭제
 		case 'd':
 			delete_menu(heap);
 			printf("\n");
 			break;
+		//레벨별 출력
 		case 'p':
 			levelOrder(heap);
 			printf("\n");
