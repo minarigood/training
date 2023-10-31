@@ -1,5 +1,3 @@
-# HEAP
-<img src="./heap2_result.PNG"/>
+# Graph
+<img src="./"/>
 
-# Huffman Code
-<img src="./huffman_code.PNG"/>
