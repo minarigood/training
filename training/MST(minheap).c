@@ -104,8 +104,8 @@ void kruskal(GraphType* g) {
     set_init(g->n); // 집합 초기화
     min_heap_sort(g->edges, g->n); // Min-Heap 정렬을 사용하여 간선을 정렬
 
-    printf("Kruskal MST Algorithm\n");
-    int i = 0;
+    printf("Kruskal MST Algorithm(minheap)\n");
+    int i = g->n - 1;
     while (edge_accepted < (g->n - 1)) // 간선의 수 < (n-1)
     {
         e = g->edges[i];
@@ -116,7 +116,7 @@ void kruskal(GraphType* g) {
             edge_accepted++;
             set_union(uset, vset); // 두 개의 집합을 합친다.
         }
-        i++;
+        i--;
     }
 }
 
