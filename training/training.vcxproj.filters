@@ -24,5 +24,8 @@
     <ClCompile Include="graph.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MST.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
