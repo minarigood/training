@@ -1,6 +1,6 @@
 # Kruskal MST Algorithm(Qsort)
-<img src="./MST.PNG"/>
+<img src="./MST(qsort).PNG"/>
 
 # Kruskal MST Algorithm(MinHeap)
-<img src="./MST.PNG"/>
+<img src="./MST(minheap).PNG"/>
 
