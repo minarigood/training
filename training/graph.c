@@ -176,6 +176,7 @@ int main() {
 
     while (1) {
 
+        //방문한 노드 수 변수와 메뉴 선택 변수 선언
         int num = 0, count = 0;
         printf("메뉴 입력 : ");
         scanf("%d", &num);
