@@ -10,7 +10,7 @@
 int parent[MAX_VERTICES];		// 부모 노드
 
 //간선 구조체
-struct Edge {			
+struct Edge {
 	int start, end, weight;
 };
 
