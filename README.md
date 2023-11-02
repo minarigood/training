@@ -1,3 +1,3 @@
-# Graph
-<img src="./graph.PNG"/>
+# Kruskal MST Algorithm
+<img src="./MST.PNG"/>
 
