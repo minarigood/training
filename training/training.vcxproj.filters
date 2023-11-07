@@ -24,7 +24,13 @@
     <ClCompile Include="graph.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MST.c">
+    <ClCompile Include="MST%28minheap%29.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MST(qsort).c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="primmst.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
