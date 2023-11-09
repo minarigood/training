@@ -1,6 +1,6 @@
-# Kruskal MST Algorithm(Qsort)
-<img src="./MST.PNG"/>
+# Dijkstra Algorithm(행렬)
+<img src="./djkstra(인접행렬).PNG"/>
 
-# Kruskal MST Algorithm(MinHeap)
-<img src="./MST.PNG"/>
+# Dijkstra Algorithm(리스트)
+<img src="./djkstra(리스트).PNG"/>
 
