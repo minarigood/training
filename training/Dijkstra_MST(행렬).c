@@ -30,7 +30,7 @@ void print_status(GraphType* g) {
 	for (int i = 0; i < g->n; i++) {
 		printf("%d ", found[i]);
 	}
-	printf("\n\n");
+	printf("\n");
 }
 
 int choose(int distance[], int n, int found[])

@@ -24,7 +24,7 @@ int found[MAX_VERTICES]; /* 방문한 정점 표시 */
 // 최단 경로 알고리즘의 진행 상황을 출력하는 함수
 void print_status(GraphType* g) {
     printf("Distance: ");
-    for (int i = 0; i < g->n; i++) {
+    for (int i = 0; i < (g->n)-1; i++) {
         if (distance[i] == INF) {
             printf("* ");
         }
@@ -33,7 +33,7 @@ void print_status(GraphType* g) {
         }
     }
     printf("\nFound: ");
-    for (int i = 0; i < g->n; i++) {
+    for (int i = 0; i < (g->n)-1; i++) {
         printf("%d ", found[i]);
     }
     printf("\n\n");
@@ -54,6 +54,8 @@ int choose(int distance[], int n, int found[]) {
 // 최단 경로를 찾는 함수
 void shortest_path(GraphType* g, int start) {
     int i, u, w;
+    int created_vertices[MAX_VERTICES]; // 만들어진 정점 저장
+    int num_created_vertices = 0; // 만들어진 정점의 개수
     for (i = 0; i < g->n; i++) {
         distance[i] = INF;
         found[i] = FALSE;
@@ -68,6 +70,11 @@ void shortest_path(GraphType* g, int start) {
             w = current->vertex;
             if (!found[w] && distance[u] + current->weight < distance[w]) {
                 distance[w] = distance[u] + current->weight;
+                
+                //정점 기록
+                if (!found[w]) {
+                    created_vertices[num_created_vertices++] = w;
+                }
             }
             current = current->next;
         }
@@ -85,7 +92,7 @@ void add_edge(GraphType* g, int start, int end, int weight) {
 
 int main(void) {
     GraphType g;
-    g.n = 10;
+    g.n = 11;
     for (int i = 0; i < g.n; i++) {
         g.adj_list[i] = NULL;
     }
