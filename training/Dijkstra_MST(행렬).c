@@ -30,7 +30,7 @@ void print_status(GraphType* g) {
 	for (int i = 0; i < g->n; i++) {
 		printf("%d ", found[i]);
 	}
-	printf("\n");
+	printf("\n\n");
 }
 
 int choose(int distance[], int n, int found[])
@@ -50,6 +50,7 @@ int choose(int distance[], int n, int found[])
 void shortest_path(GraphType* g, int start)
 {
 	int i, u, w;
+	int list[10] = { 1, };
 	for (i = 0; i < g->n; i++) /* 초기화 */
 	{
 		distance[i] = g->weight[start][i];
@@ -60,11 +61,16 @@ void shortest_path(GraphType* g, int start)
 	for (i = 0; i < g->n - 1; i++) {
 		print_status(g);
 		u = choose(distance, g->n, found);
+		list[i + 1] = u + 1;
 		found[u] = TRUE;
 		for (w = 0; w < g->n; w++)
 			if (!found[w])
 				if (distance[u] + g->weight[u][w] < distance[w])
 					distance[w] = distance[u] + g->weight[u][w];
+	}
+	printf("정점 출력 : ");
+	for (i = 0; i <= 9; i++) {
+		printf("%d ", list[i]);
 	}
 }
 
