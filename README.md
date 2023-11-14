@@ -1,3 +1,3 @@
-# Ployd Algorithm(행렬)
+# Ployd Algorithm
 <img src="./ployd.PNG"/>
 
