@@ -148,7 +148,7 @@
     <ClCompile Include="MST(qsort).c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ployd.c" />
+    <ClCompile Include="floyd.c" />
     <ClCompile Include="primmst.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
