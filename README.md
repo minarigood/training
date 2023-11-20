@@ -1,3 +1,3 @@
-# Ployd Algorithm
-<img src="./ployd.PNG"/>
+# Floyd Algorithm
+<img src="./floyd.PNG"/>
 
