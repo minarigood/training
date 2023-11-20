@@ -76,7 +76,7 @@ int main(void) {
         start = 0;
         end = 0;
 
-        //시작 노드와 끝 노드를 출력
+        //시작 노드와 끝 노드를 입력
         printf("\nStart Node : ");
         scanf("%d", &start);
         printf("End Node : ");
