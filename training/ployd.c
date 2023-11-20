@@ -14,8 +14,8 @@ typedef struct GraphType {
 int A[MAX_VERTICES][MAX_VERTICES];
 int path[MAX_VERTICES][MAX_VERTICES];
 
-//ployd 알고리즘 함수
-void ployd(GraphType* g) {
+//floyd 알고리즘 함수
+void floyd(GraphType* g) {
     int i, j, k;
     for (i = 0; i < g->n; i++) {
         for (j = 0; j < g->n; j++) {
@@ -68,14 +68,15 @@ int main(void) {
         }
     };
 
-    //ployd 알고리즘 함수 호출
-    ployd(&g);
+    //floyd 알고리즘 함수 호출
+    floyd(&g);
 
-    printf("Ployd-Warshall Algorithm\n");
+    printf("Floyd-Warshall Algorithm\n");
     for (int i = 0; i <= 6; i++) {
         start = 0;
         end = 0;
 
+        //시작 노드와 끝 노드를 출력
         printf("\nStart Node : ");
         scanf("%d", &start);
         printf("End Node : ");
@@ -84,6 +85,8 @@ int main(void) {
         if (start < 1 || start > g.n || end < 1 || end > g.n) {
             printf("Invalid input.\n");
         }
+
+        //최단거리와 최단경로 출력
         else {
             printf("Shortest Distance : %d\n", A[start - 1][end - 1]);
             printf("Shortest Path : ");
