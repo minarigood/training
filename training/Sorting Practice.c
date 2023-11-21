@@ -55,6 +55,7 @@ void selectionSort(int arr[], int count) {
     s_compar[count] = comparisons;
     s_move[count] = movements;
 
+    printf("\n");
     printf("Move Count : %d\n",movements);
     printf("Compare Count : %d\n",comparisons);
 }
@@ -65,11 +66,12 @@ int main() {
     int s_list[20]; //선택 정렬 배열
     int i_list[20]; //삽입 정렬 배열
     int b_list[20]; //버블 정렬 배열
-    
+    int count = 0;
        
     RandomArray(s_list);
     printf("Original List\n");
     printArray(s_list);
+    selectionSort(s_list,count);
 
 
 	return 0;
