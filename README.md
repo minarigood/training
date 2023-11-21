@@ -1,3 +1,4 @@
-# Ployd Algorithm
-<img src="./ployd.PNG"/>
+# Sorting
+# Selection Sort
+<img src="./selection.PNG"/>
 
