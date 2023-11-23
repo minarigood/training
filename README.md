@@ -1,4 +1,3 @@
-# Sorting
-# Selection Sort
-<img src="./selection.PNG"/>
+# Shell_sort
+<img src="./shell_sort.PNG"/>
 
