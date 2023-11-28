@@ -1,3 +1,3 @@
 # Shell_sort
-<img src="./shell_sort.PNG"/>
+<img src="./Shell_sort.PNG"/>
 
