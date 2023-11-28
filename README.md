@@ -1,4 +1,4 @@
 # Sorting
-# Selection Sort
-<img src="./selection.PNG"/>
+# Merge_Sort
+<img src="./merge_sort.PNG"/>
 
